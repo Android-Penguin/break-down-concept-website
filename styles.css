@@ -1,5 +1,5 @@
 :root {
-    --them-blue: #3a53a5;
+    --theme-blue: #3a53a5;
     font-size: 62.5%;
 }
 
@@ -16,8 +16,9 @@ html {
 }
 
 #header-container {
-    background-color: var(--them-blue);
+    background-color: var(--theme-blue);
     color: white;
+    padding-bottom: 2.5rem;
 }
 
 /** Navigation */
@@ -81,4 +82,46 @@ html {
 #intro div {
     padding-left: 5rem;
     border-left: solid 0.5px white;
+}
+
+
+
+
+/** Body */
+#body {
+    padding: 12rem;
+    color: var(--theme-blue);
+}
+
+#body h1 {
+    font-weight: lighter;
+    font-size: 8rem;
+}
+
+#body h2 {
+    font-weight: lighter;
+    font-size: 4rem;
+}
+
+#body p {
+    font-size: 2rem;
+}
+
+#body-spacing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40rem);
+    grid-template-rows: auto auto;
+    gap: 0 25rem;
+}
+
+#body-spacing-grid :nth-child(2) {
+    margin-top: auto;
+}
+
+#body-spacing-grid :nth-child(3) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#body-spacing-grid :nth-child(3) p:first-of-type {
+    margin-top: 0;
 }
