@@ -1,0 +1,84 @@
+:root {
+    --them-blue: #3a53a5;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    /* box-shadow: 0 0 0 1px plum; */
+}
+
+body,
+html {
+    margin: 1rem;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header-container {
+    background-color: var(--them-blue);
+    color: white;
+}
+
+/** Navigation */
+#nav-container {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+}
+
+#nav-container img {
+    margin: 10px;
+    height: 120px;
+    margin-right: auto;
+}
+
+#nav-container .active {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#nav-container span {
+    padding: 4rem 2rem;
+}
+
+#nav-container * {
+    cursor: pointer;
+}
+
+/** Main info container */
+#intro {
+    display: grid;
+    grid-template-rows: 30rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#intro :nth-child(2) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#intro span {
+    font-weight: lighter;
+    font-size: 16rem;
+}
+
+#intro p {
+    text-align: justify;
+    max-width: 26rem;
+    font-size: 3rem;
+}
+
+#intro .rotate {
+    text-align: center;
+    text-decoration: underline;
+    transform: rotate(20deg);
+}
+
+#intro div {
+    padding-left: 5rem;
+    border-left: solid 0.5px white;
+}
