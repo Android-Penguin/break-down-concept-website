@@ -1,0 +1,19 @@
+#resources-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10rem 5rem;
+}
+
+#resources-container a {
+    text-decoration: none;
+}
+
+#resources-container h1 {
+    margin-top: 7rem;
+}
+#resources-container h1:first-of-type {
+    margin-top: 3rem;
+}
+#resources-container h1 a {
+    color: var(--theme-blue);
+}
