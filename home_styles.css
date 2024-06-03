@@ -1,0 +1,37 @@
+/** Main info container */
+#intro {
+    display: none;
+    /* display: grid; */
+    grid-template-rows: 30rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#intro :nth-child(2) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#intro span {
+    font-weight: lighter;
+    font-size: 16rem;
+}
+
+#intro p {
+    text-align: justify;
+    max-width: 26rem;
+    font-size: 3rem;
+}
+
+#intro .rotate {
+    text-align: center;
+    text-decoration: underline;
+    transform: rotate(20deg);
+}
+
+#intro div {
+    padding-left: 5rem;
+    border-left: solid 0.5px white;
+}
