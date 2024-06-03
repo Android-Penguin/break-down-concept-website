@@ -87,7 +87,7 @@ p {
 
 /* Active page */
 #nav-container .active {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* White button */
