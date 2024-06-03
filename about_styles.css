@@ -1,0 +1,36 @@
+/** About content */
+#about-content-container {
+    margin: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+}
+
+/* layout grid */
+#about-grid {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem 3rem;
+}
+
+#about-grid h1 {
+    margin: 0;
+    margin-top: 3rem;
+    grid-column: 1 / -1;
+}
+
+#about-grid .c2 {
+    grid-column: 2 / 3;
+}
+
+#about-grid .c3 {
+    grid-column: 3 / 4;
+}
+
+#about-grid .c4 {
+    grid-column: 4 / 5;
+}
+
+#about-grid .c5 {
+    grid-column: 5 / 6;
+}
