@@ -1,0 +1,18 @@
+#dashboard-container {
+    margin: 5rem;
+}
+/* Centred container */
+#dashboard-container > div {
+    margin: 0 auto;
+    max-width: 130rem;
+}
+
+/* All page content */
+#dashboard-container > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+#dashboard-container > div > div > img {
+    width: auto;
+    max-width: 100%;
+}
