@@ -1,6 +1,7 @@
 :root {
-    --theme-blue: #3A53A4;
     font-size: 62.5%;
+    --theme-blue: #3A53A4;
+    --page-margin: 1.8rem;
 }
 
 * {
@@ -15,18 +16,32 @@ html {
     font-family: 'Graphik', sans-serif;
 }
 
+/** General element styles */
+h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--theme-blue);
+}
+h2 {
+    font-size: 3.8rem;
+    font-weight: 300;
+    color: var(--theme-blue);
+}
+p {
+    font-size: 1.6rem;
+    /* font-weight: 300; */
+    color: var(--theme-blue);
+}
+
 /** Header container that holds nav */
 #header-container {
     position: sticky;
     top: -1px;
-    margin: 1.8rem;
+    z-index: 100;
+    margin: var(--page-margin);
     margin-bottom: 0;
-    background-color: var(--theme-blue);
     color: white;
-    box-shadow: 0px 4px 5px grey;
-}
-#header-container.home {
-    box-shadow: 0 0 0;
+    height: 15rem;
 }
 
 /** Navigation bar */
@@ -39,10 +54,15 @@ html {
     padding-left: 2rem;
     padding-right: 7rem;
     height: 15rem;
+    background-color: var(--theme-blue);
+    box-shadow: 0px 4px 5px grey;
     transition: height, 0.1s;
 }
 #nav-container.is-pinned {
     height: 10rem;
+}
+#header-container.home #nav-container {
+    box-shadow: 0 0 0;
 }
 
 
@@ -74,6 +94,39 @@ html {
 #nav-container .white-btn {
     padding-left: 2.8rem;
     padding-right: 2.8rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    color: var(--theme-blue);
+}
+
+/** Footer */
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    padding-left: 5rem;
+    background-color: var(--theme-blue);
+}
+
+#footer-links {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    gap: 0.8rem;
+}
+#footer-links a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+#footer-links a.bold {
+    font-weight: 600;
+}
+#footer-links a.btn {
+    text-align: center;
+    padding: 1.2rem;
     background-color: white;
     border-radius: 0.8rem;
     color: var(--theme-blue);
