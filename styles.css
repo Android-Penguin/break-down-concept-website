@@ -108,6 +108,9 @@ p {
     padding-left: 5rem;
     background-color: var(--theme-blue);
 }
+#footer-container img {
+    height: 17.5rem;
+}
 
 #footer-links {
     display: grid;
@@ -130,4 +133,22 @@ p {
     background-color: white;
     border-radius: 0.8rem;
     color: var(--theme-blue);
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 20%;
+    }
+    #nav-container span:nth-of-type(2) {
+        display: none;
+    }
+    #nav-container span:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 930px) {
+    :root {
+        font-size: 35%;
+    }
 }
